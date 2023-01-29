@@ -1,0 +1,13 @@
+version: '3'
+
+name: spark
+
+services:
+  spark:
+    container_name: spark
+    build: .
+    image: spark:latest
+    ports:
+      - 8080:8080
+    command: /bin/bash
+    tty: true
